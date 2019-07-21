@@ -43,11 +43,11 @@ except ImportError:
 DEBUG = False
 default_manifest = ".repo/manifest.xml"
 
-custom_local_manifest = ".repo/local_manifests/beast_manifest.xml"
+custom_local_manifest = ".repo/local_manifests/atom_manifest.xml"
 custom_default_revision = "pie"
-custom_dependencies = "beast.dependencies"
-org_manifest = "BeastRoms-Devices"  # leave empty if org is provided in manifest
-org_display = "BeastRoms-Devices"  # needed for displaying
+custom_dependencies = "atom.dependencies"
+org_manifest = "AtomOS-Devices"  # leave empty if org is provided in manifest
+org_display = "AtomOS-Devices"  # needed for displaying
 
 github_auth = None
 
