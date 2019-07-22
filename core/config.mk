@@ -231,7 +231,7 @@ $(call project-set-path-variant,recovery,RECOVERY_VARIANT,bootable/recovery)
 
 -include vendor/extra/BoardConfigExtra.mk
 ifneq ($(CUSTOM_BUILD),)
-include vendor/beast/config/BoardConfigBeast.mk
+include vendor/atom/config/BoardConfigAtom.mk
 endif
 
 # The build system exposes several variables for where to find the kernel
@@ -1099,7 +1099,7 @@ endif
 ifneq ($(CUSTOM_BUILD),)
 ## We need to be sure the global selinux policies are included
 ## last, to avoid accidental resetting by device configs
-$(eval include device/beast/sepolicy/common/sepolicy.mk)
+$(eval include device/atom/sepolicy/common/sepolicy.mk)
 endif
 
 # Include any vendor specific config.mk file
@@ -1109,10 +1109,10 @@ endif
 -include $(TOPDIR)vendor/*/build/core/apicheck.mk
 
 # Rules for QCOM targets
--include $(TOPDIR)vendor/beast/build/core/qcom_target.mk
+-include $(TOPDIR)vendor/atom/build/core/qcom_target.mk
 
 # Rules for MTK targets
--include $(TOPDIR)vendor/beast/build/core/mtk_target.mk
+-include $(TOPDIR)vendor/atom/build/core/mtk_target.mk
 
 
 
